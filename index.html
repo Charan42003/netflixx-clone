@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon-netflix.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/568f226be1.js" crossorigin="anonymous"></script>
+    <title>Netflix-clone</title>
+    <!-- Preloader Style -->
+    <style>
+      /* PRELOADER */
+      .preLoad {
+          width: 100%;
+          height: 100vh;
+          position: fixed;
+          top: 0;
+          left: 0;
+          background: black
+      }
+      .preLoad img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -80%);
+          width: 10rem
+      }
+      .nfLoader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 37px 0 0 -25px;
+        width: 50px;
+        height: 50px;
+        z-index: 888;
+      }
+      .nfLoader:after {
+        content: "";
+        background-image: url(https://assets.nflxext.com/en_us/pages/wiplayer/site-spinner.png);
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+        position: absolute;
+        margin: -6px;
+        width: inherit;
+        height: inherit;
+        animation: nfLoader-spin 1.1s linear infinite,1!important;
+        -webkit-animation: nfLoader-spin 1.1s linear infinite,1!important; 
+      }
+      @keyframes nfLoader-spin {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @-webkit-keyframes nfLoader-spin {
+        100% {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="preLoad">
+        <img src='./src/assets/logo.png' alt="" />
+        <div id="loader" class="nfLoader"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

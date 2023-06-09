@@ -1,0 +1,96 @@
+.row {
+    color: white;
+    margin-left: 20px;
+}
+
+.row > h2 {
+    text-align: left;
+    margin: 0;
+    margin-left: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.row_wrapper {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    gap: 30px 15px;
+}
+
+.row_wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.card {
+    max-height: 220px;
+    width: 100%;
+    object-fit: contain;
+    margin-right: 10px;
+    transition: transform 450ms;
+}
+
+.card:hover {
+    opacity: 1;
+    transform: scale(1.08)
+}
+
+.poster_img {
+    width: 100%;
+    max-height: 270px;
+}
+
+.poster_img:hover {
+    opacity: 1;
+    transform: scale(1.09)
+}
+
+@media only screen and (max-width: 800px) {
+    .row_wrapper {
+        padding: 20px;
+        gap: 20px 5px;
+    }
+    .card {
+        max-height: 180px;
+        margin-right: 10px;
+    }
+    .poster_img {
+        max-height: 200px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .row {
+        margin-left: 10px;
+    }
+    .row > h2 {
+        margin-left: 10px;
+        margin-top: 10px;
+        font-size: 1.7rem;
+    }
+    .row_wrapper {
+        padding: 10px;
+        gap: 15px 5px;
+    }
+    .card {
+        max-height: 140px;
+        margin-right: 10px;
+    }
+    .poster_img {
+        max-height: 170px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .row > h2 {
+        font-size: 1.5rem;
+    }
+    .row_wrapper {
+        gap: 10px 5px;
+    }
+    .card {
+        max-height: 120px;
+    }
+    .poster_img {
+        max-height: 150px;
+    }
+}

@@ -1,0 +1,110 @@
+.banner__contents {
+    margin-left: 30px;
+    padding-top: 190px;
+    position: relative;
+    height: 448px;
+    color: white;
+    object-fit: contain;
+    width: 60%
+}
+
+.banner__title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 1.3rem;
+    text-shadow: 0 0 3px black;
+}
+
+.banner__description {
+    width: 60%;
+    line-height: 1.3;
+    padding-top: 1.5rem;
+    font-size: 1.2rem;
+    height: 80px;
+    font-weight: 500;
+    text-shadow: 0 0 2px black;
+}
+
+.banner__fade {
+    height: 8rem;
+    background-image: linear-gradient(
+        180deg,
+        transparent,
+        rgba(37, 37, 37, 0.61),
+        #000
+    );
+}
+
+.banner__btn {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 1rem 3rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    box-shadow: #B9171F 0px 0px 10px;
+    background-color: #b9171faf;
+}
+.banner__btn i {
+    font-size: 0.8rem;
+    margin-right: 8px;
+}
+.banner__btn:hover {
+    background-color: #B9171F;
+    transition: all 0.2s;
+}
+
+@media only screen and (max-width: 800px) {
+    .banner__contents {
+        height: 300px;
+        padding-top: 125px;
+    }
+    .banner__title {
+        font-size: 2.5rem;
+    }
+    .banner__btn {
+        padding: 0.5rem 2rem;
+    }
+    .banner__description {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .banner__contents {
+        height: 300px;
+        padding-top: 150px;
+        width: 70%;
+        margin-left: 20px;
+    }
+    .banner__title {
+        font-size: 2rem;
+    }
+    .banner__btn {
+        padding: 0.25rem 1.5rem;
+    }
+    .banner__description {
+        font-size: 0.8rem;
+        width: 80%
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .banner__contents {
+        margin-left: 15px;
+        width: 76%;
+        padding-top: 170px
+    }
+    .banner__btn:nth-child(1) {
+        margin-bottom: 10px
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .banner__contents {
+        padding-top: 140px
+    }
+}
