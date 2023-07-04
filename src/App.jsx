@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import Signin from './components/signin'
-import BeforeLog from './components/BeforeLog'
-import HomeScreen from './components/HomeScreen'
-import RoutLayout from './components/RoutLayout';
+import Signin from './components/Signin/signin'
+import BeforeLog from './components/HomePage-beforeLog/BeforeLog'
+import HomeScreen from './components/HomeScreen/HomeScreen'
+import RoutLayout from './components/RoutLayout/RoutLayout';
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(

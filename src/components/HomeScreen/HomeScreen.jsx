@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './HomeScreen.css'
-import NavBar from './NavBar'
-import Banner from './Banner'
-import Row from './Row'
+import NavBar from './components/navBar/NavBar'
+import Banner from './components/Banner/Banner'
+import Row from './components/Row/Row'
 
 function HomeScreen() {
   return (

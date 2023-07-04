@@ -28,7 +28,7 @@ function Row(props) {
                     </>
                 ))
             :
-            <h1>Loading....</h1>
+            <h3 style={{paddingLeft: 50}}>Loading....</h3>
         }
         </div>
     </div>

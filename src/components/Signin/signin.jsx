@@ -1,7 +1,7 @@
 import React from 'react'
 import './signin.css'
-import logo from '../assets/logo.png'
-import banner from '../assets/bannerimg.jpg'
+import logo from '../../assets/logo.png'
+import banner from '../../assets/bannerimg.jpg'
 import { Link } from 'react-router-dom';
 
 function Signin() {

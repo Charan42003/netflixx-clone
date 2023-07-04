@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './NavBar.css'
-import logo from '../assets/logo.png'
-import avatar from '../assets/avatar2.png'
+import logo from '../../../../assets/logo.png'
+import avatar from '../../../../assets/avatar2.png'
 import { Link } from 'react-router-dom'
 
 function NavBar() {
