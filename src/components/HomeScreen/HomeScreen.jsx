@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './HomeScreen.css'
 import NavBar from './components/navBar/NavBar'
-import Banner from './components/Banner/Banner'
+import Banner from './components/banner/Banner'
 import Row from './components/Row/Row'
 
 function HomeScreen() {
